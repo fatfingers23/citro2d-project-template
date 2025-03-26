@@ -1,0 +1,4 @@
+[toolchain]
+channel = "nightly"
+targets = ["armv6k-nintendo-3ds"]
+version = "1.87.0"
