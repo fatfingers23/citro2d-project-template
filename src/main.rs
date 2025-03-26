@@ -54,6 +54,10 @@ fn main() {
                 right_color: clr_tri2,
                 depth: 0.0,
             });
+            // render_target.clear(color);
+
+            // render_target.
+            // render_target
 
             render_target.render_2d_shape(&Rectangle {
                 point: Point::new(350.0, 0.0, 0.0),

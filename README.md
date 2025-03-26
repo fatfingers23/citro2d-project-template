@@ -23,6 +23,9 @@ export PATH=${DEVKITARM}/bin:$PATH
 
 
 ## VS Code setup with bacon ls
+
+Add notes about this. I had to add the config back for it to work properly
+
 1. Make sure you have [bacon](https://github.com/Canop/bacon) installed `cargo install --locked bacon`
 2. Make sure have [bacon-ls](https://github.com/crisidev/bacon-ls) installed `cargo install --locked bacon-ls`
 3. Install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=MatteoBigoi.bacon-ls-vscode)
