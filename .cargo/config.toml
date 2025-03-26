@@ -1,0 +1,19 @@
+[build]
+target = ["armv6k-nintendo-3ds"]
+
+#These values will depend on what you have set for the env variable DEVKITARM
+
+[target.armv6k-nintendo-3ds]
+linker = "/opt/devkitpro/devkitARM/bin/arm-none-eabi-gcc"
+
+[target.armv6k-nintendo-3ds.cc]
+cc = "/opt/devkitpro/devkitARM/bin/arm-none-eabi-gcc"
+
+[target.armv6k-nintendo-3ds.cxx]
+cxx = "/opt/devkitpro/devkitARM/bin/arm-none-eabi-g++"
+
+[target.armv6k-nintendo-3ds.ar]
+ar = "/opt/devkitpro/devkitARM/bin/arm-none-eabi-ar"
+
+[target.armv6k-nintendo-3ds.ranlib]
+ranlib = "/opt/devkitpro/devkitARM/bin/arm-none-eabi-ranlib"
