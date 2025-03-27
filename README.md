@@ -1,5 +1,5 @@
 # citro2d-project-template
-This is an easy to use template for playing around with my work on [citro3d-rs](https://github.com/fatfingers23/citro3d-rs) to implement [citro2d](https://github.com/devkitPro/citro2d) with a safe Rust wrapper.
+This is an easy to use template for playing around with my work on [citro3d-rs](https://github.com/fatfingers23/citro3d-rs) to implement [citro2d](https://github.com/devkitPro/citro2d) with a safe Rust wrapper. At this moment you can only really draw 2D shapes, but the plan is to have a safe wrapper for all of citro2d.
 
 The main is a direct copy of the [2d_shapes example](https://github.com/devkitPro/3ds-examples/tree/master/graphics/gpu/2d_shapes), but in Rust.
 
@@ -23,13 +23,15 @@ export PATH=${DEVKITARM}/bin:$PATH
 
 
 ## VS Code setup with bacon ls
+I did not have luck with using [rust analyzer as setup here](https://github.com/rust3ds/ctru-rs/wiki/Guides#setting-up-rust-analyzer) with my 3DS projects. But I found using bacon and bacon-ls helped a ton to keep a familiar workflow.
 
-Add notes about this. I had to add the config back for it to work properly
+Although not strictly needed. I found having a [config.toml](.cargo/config.toml) setup helpful. Just make sure to update with the locations of your env variables for `DEVKITARM`
+
 
 1. Make sure you have [bacon](https://github.com/Canop/bacon) installed `cargo install --locked bacon`
 2. Make sure have [bacon-ls](https://github.com/crisidev/bacon-ls) installed `cargo install --locked bacon-ls`
 3. Install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=MatteoBigoi.bacon-ls-vscode)
-4. Usually need to set up a [bacon.toml](./bacon.toml) as emplaned [here](https://github.com/crisidev/bacon-ls?tab=readme-ov-file#configuration), but there is already one setup for this project.
+4. Usually need to set up a [bacon.toml](./bacon.toml) as explained [here](https://github.com/crisidev/bacon-ls?tab=readme-ov-file#configuration), but there is already one setup for this project.
 5. You need to make sure bacon is running for it to work, can do that with `bacon -j bacon-ls`
 
 ## Running in an emulator
@@ -54,6 +56,6 @@ To run on real hardware you need to have a modded 3DS running a custom firmware.
 
 1. Make sure your 3DS is connected to the same network as your computer.
 2. Once you have your 3DS modded and the homebrew launcher installed open the homebrew launcher.
-3. On the main screen press `Y` on your console and should see a screen that says "3dslink NetLoader" along with an IP address.
+3. On the main screen of homebrew launcher press `Y` on your console and should see a screen that says "3dslink NetLoader" along with an IP address.
 4. In the projects root run `cargo 3ds run --address {address from step 3}`
 (May not need the `--address` flag depending on how your network is configured)
