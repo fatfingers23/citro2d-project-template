@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 ctru-rs = { git = "https://github.com/rust3ds/ctru-rs" }
-citro2d = { git = "https://github.com/fatfingers23/citro3d-rs.git", rev = "34e5981203dd8c76f08b0412b6113520f65e1ca9" }
+citro2d = { git = "https://github.com/fatfingers23/citro3d-rs.git", rev = "95875c9f1c7f1f54e1dacdc711c4d3c00e3c5e53" }
 
 [package.metadata.cargo-3ds]
 romfs_dir = "romfs"
